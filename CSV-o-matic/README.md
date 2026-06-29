@@ -52,10 +52,8 @@ produces entries like `m-Fam120a-fw`, `m-Fam120a-rv`, ...
 
 This reads `PrimersJun2026.txt` and creates `primer_list.csv` in the current directory.
 
-## Input format assumptions
+## Input format
 
 - Each gene block starts with a line beginning with `-` (e.g. `- Fam120a`).
 - Each gene block contains one `LEFT PRIMER` line and one `RIGHT PRIMER` line.
 - The primer sequence is the **last whitespace-separated value** on each of those lines.
-
-If your file's gene names contain spaces or parentheses (e.g. `- Lipe (Hsl)`), they are kept as-is, so the resulting CSV entry will be `Lipe (Hsl)-fw`.
